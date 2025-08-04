@@ -6,30 +6,46 @@
     <title>Document</title>
     <link href="src/output.css" rel="stylesheet" />
   </head>
+  <body
+    class="min-h-screen font-primary bg-linear-to-t from-secondary to-primary text-tertiary"
+  >
+    <main>
+      <header class="md:flex justify-end items-center bg-primary p-5">
+        <nav class="flex gap-20 mr-30">
+          <a href="index.html" class="text-sm">Home</a>
+          <a href="#" class="text-sm">About</a>
+          <a href="#" class="text-sm">Projects</a>
+          <a href="#" class="text-sm">Contact Me</a>
+        </nav>
+      </header>
 
-  <header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Projects</a>
-      <a href="#">Contact Me</a>
-    </nav>
-  </header>
+      <section class="flex justify-evenly">
+        <section class="flex flex-col justify-center items-end mt-15">
+          <img src="assets/francis.png" alt="Francis Gorreon" class="h-130" />
+        </section>
 
-  <body>
-    <h1 class="text-5xl font-bold underline">Hello world!</h1>
-    <section>
-      <p>Hi, I am</p>
-      <p>Francis C. Gorreon</p>
-      <p>
-        an Information Technology student, fueled with dreams and visions in
-        hopes of making it big
-      </p>
-      <button>Download CV</button>
-    </section>
-
-    <section>
-      <img src="images/francis.png" alt="Francis Gorreon" />
-    </section>
+        <section class="flex flex-col justify-center items-center">
+          <p class="text-lg mb-5">Hi, I am</p>
+          <div class="relative md:text-6xl mb-8 font-secondary">
+            Francis C. Gorreon
+            <img src="assets/line.svg" class="absolute w-auto"></img>
+          </div>
+          <p class="text-base">
+            an Information Technology student, fueled with
+          </p>
+          <p class="text-base tracking-widest mb-10">
+            <span class="font-bold">dreams and visions </span>
+            in hopes of making it big
+          </p>
+          <a href="my_resources/gorreon_cv.pdf" download>
+            <button
+              class="bg-primary border border-se text-secondary py-3 px-9 rounded-4xl hover:bg-secondary hover:text-primary hover:border-primary hover:cursor-pointer active:opacity-70 transition-colors duration-300"
+            >
+              Download CV
+            </button>
+          </a>
+        </section>
+      </section>
+    </main>
   </body>
 </html>
