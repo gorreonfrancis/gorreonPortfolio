@@ -7,7 +7,7 @@
     <link href="src/output.css" rel="stylesheet" />
   </head>
   <body
-    class="min-h-screen font-primary bg-linear-to-t from-secondary to-primary text-tertiary"
+    class="min-h-screen font-primary bg-linear-to-t from-secondary to-primary text-tertiary md:overflow-hidden"
   >
     <main>
       <header class="flex justify-end  bg-primary p-5 h-16">
@@ -20,27 +20,26 @@
         </nav>
       </header>
 
-      <section class="flex flex-col md:flex-row justify-evenly">
-        <section class="flex justify-center items-end mt-15">
-          <img src="assets/francis.png" alt="Francis Gorreon" class="md:h-130 sm:h-100 object-contain" />
+      <section class="flex flex-col md:flex-row justify-evenly mt-0 md:mt-3">
+        <section class="flex justify-center items-end mt-15 order-last md:order-first ">
+          <img src="assets/francis.png" alt="Francis Gorreon" class="h-90 md:h-130  object-contain" />
         </section>
 
-        <section class="flex flex-col justify-center items-center">
-          <p class="text-lg mb-5">Hi, I am</p>
-          <div class="relative md:text-6xl mb-8 font-secondary font-bold">
+        <section class="flex flex-col justify-center items-center order-first md:order-last mt-20 md:mt-0">
+          <p class="text-xs md:text-lg mb-3 md:mb-5 tracking-widest">Hi, I am</p>
+          <div class="relative text-4xl md:text-5xl lg:text-6xl mb-0 md:mb-8 font-secondary font-bold">
             Francis C. Gorreon
             <img src="assets/line.svg" class="absolute w-auto"></img>
           </div>
-          <p class="text-base tracking-widest">
+          <p class="text-xs mx-5 my-10 md:my-5 md:text-base tracking-widest text-center">
             an Information Technology student, fueled with
-          </p>
-          <p class="text-base tracking-widest mb-10">
+            <span class="hidden md:inline"><br></span>
             <span class="font-bold">dreams and visions </span>
             in hopes of making it big
           </p>
           <a href="my_resources/gorreon_cv.pdf" download>
             <button
-              class="bg-primary border border-se text-secondary py-3 px-9 rounded-4xl hover:bg-secondary hover:text-primary hover:border-primary hover:cursor-pointer active:opacity-70 transition-colors duration-300"
+              class="bg-primary border text-secondary py-3 px-9 rounded-4xl hover:bg-secondary hover:text-primary hover:border-primary hover:cursor-pointer active:opacity-70 transition-colors duration-300"
             >
               Download CV
             </button>
