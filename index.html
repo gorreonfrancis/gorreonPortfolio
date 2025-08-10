@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Francis' Portfolio</title>
     <script src="javascripts/nav_bar.js"></script>
     <link href="src/output.css" rel="stylesheet" />
   </head>
@@ -11,93 +11,9 @@
     class="min-h-screen font-primary bg-linear-to-t from-secondary to-primary text-tertiary md:overflow-hidden"
   >
     <main>
-      <nav class="flex justify-end items-center bg-primary">
-      <ul
-        class="fixed top-0 right-0 h-1/2 w-[250px] z-999 bg-linear-to-t from-secondary to-primary/80 backdrop-blur-sm rounded-3xl shadow-lg flex flex-col items-start justify-start invisible md:invisible"
-        id="sidebar"
-      >
-        <li class="w-full h-16" onclick="toggleSidebar()">
-          <a
-            href="#"
-            class="h-full px-5 hover:opacity-60 flex justify-end items-center"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="currentColor"
-                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z"/></svg></a>
-        </li>
-        <hr class="w-full border-0.5 border-white/20 px-60" />
-        <li class="w-full h-16">
-          <a href="" class="h-full px-5 hover:opacity-60 flex items-center"
-            >Home</a
-          >
-        </li>
-        <hr class="w-full border-0.5 border-white/20 px-60" />
-        <li class="w-full h-16">
-          <a href="" class="h-full px-5 hover:opacity-60 flex items-center"
-            >About</a
-          >
-        </li>
-        <hr class="w-full border-0.5 border-white/20 px-60" />
-        <li class="w-full h-16">
-          <a href="" class="h-full px-5 hover:opacity-60 flex items-center"
-            >Projects</a
-          >
-        </li>
-        <hr class="w-full border-0.5 border-white/20 px-60" />
-        <li class="w-full h-16">
-          <a href="" class="h-full px-5 hover:opacity-60 flex items-center"
-            >Contact Me</a
-          >
-        </li>
-        <hr class="w-full border-0.1 border-white/20 px-60" />
-      </ul>
 
-      <!-- nav bar -->
-      <ul class="flex gap-20 mr-10 invisible md:visible lg:visible">
-        <li class="h-16">
-          <a
-            href="index.html"
-            class="text-sm flex items-center h-full px-2 hover:opacity-60"
-            >Home</a
-          >
-        </li>
-        <li class="h-16">
-          <a
-            href="#"
-            class="text-sm flex items-center h-full px-2 hover:opacity-60"
-            >About</a
-          >
-        </li>
-        <li class="h-16">
-          <a
-            href="#"
-            class="text-sm flex items-center h-full px-2 hover:opacity-60"
-            >Projects</a
-          >
-        </li>
-        <li class="h-16">
-          <a
-            href="#"
-            class="text-sm flex items-center h-full px-2 hover:opacity-60"
-            >Contact Me</a
-          >
-        </li>
-        <li
-          class="h-16 visible md:invisible shrink-0"
-          onclick="toggleSidebar()"
-        >
-          <a href="#" class="flex items-center h-full px-2">
-            <img src="assets/hamburger icon.svg" class="h-7 w-7"
-          /></a>
-        </li>
-      </ul>
-    </nav>
-
+      <div id="nav_bar"></div>
+     
       <section class="flex flex-col md:flex-row justify-evenly mt-0 md:mt-3">
         <section class="flex justify-center items-end mt-15 order-last md:order-first ">
           <img src="assets/francis.png" alt="Francis Gorreon" class="h-90 md:h-130  object-contain" />
