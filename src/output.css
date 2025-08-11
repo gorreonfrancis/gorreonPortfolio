@@ -265,6 +265,9 @@
   .bottom-2 {
     bottom: calc(var(--spacing) * 2);
   }
+  .bottom-10 {
+    bottom: calc(var(--spacing) * 10);
+  }
   .bottom-\[20px\] {
     bottom: 20px;
   }
@@ -642,6 +645,12 @@
   }
   .bg-secondary {
     background-color: var(--color-secondary);
+  }
+  .bg-secondary\/60 {
+    background-color: color-mix(in srgb, #FF9479 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-secondary) 60%, transparent);
+    }
   }
   .bg-white {
     background-color: var(--color-white);

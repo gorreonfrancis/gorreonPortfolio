@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Francis' Background</title>
-    <script src="javascripts/nav_bar.js"></script>
     <link href="src/output.css" rel="stylesheet" />
   </head>
   <body class="min-h-screen font-primary bg-secondary text-tertiary">
@@ -12,28 +11,7 @@
       <div id="nav_bar"></div>
 
       <!-- BACK TO TOP BUTTON -->
-      <button onclick="backToTopFunction()" id="back_to_top_button" class="bg-primary/60 backdrop-blur-xl rounded-full p-2 hover:cursor-pointer hover:opacity-60 fixed bottom-2 right-10 z-99 invisible" ><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 512 512" class="text-secondary"><path fill="currentColor" d="M256 63.6L0 319.6l69.8 69.8L256 203.2l186.2 186.2l69.8-69.8z"/></svg></button>
-
-      <script>// Get the button:
-let back_to_top_button = document.getElementById("back_to_top_button");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-    back_to_top_button.classList.remove("invisible");
-  } else {
-     back_to_top_button.classList.add("invisible");
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-  function backToTopFunction() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-</script>
+      <button onclick="backToTopFunction()" id="back_to_top_button" class="bg-secondary/60 backdrop-blur-xl rounded-full p-4 hover:cursor-pointer hover:opacity-60 fixed bottom-10 right-10 z-99 invisible"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="text-primary" viewBox="0 0 16 16"><path fill="currentColor" d="M8 .5L.5 8H5v8h6V8h4.5z"/></svg></button>
 
       <!-- Technical Skills section -->
       <div class="py-3 px-5 md:px-8 md:py-9 lg:px-15 lg:py-10 bg-secondary">
@@ -247,5 +225,7 @@ function scrollFunction() {
       </div>
       <!-- END OF SECTION 3 -->
     </main>
+  <script src="javascripts/nav_bar.js"></script>
+  <script src="javascripts/back_to_top.js"></script>
   </body>
 </html>
