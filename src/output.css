@@ -696,6 +696,9 @@
   .text-justify {
     text-align: justify;
   }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
   .font-primary {
     font-family: var(--font-primary);
   }
