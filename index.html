@@ -16,7 +16,7 @@
       <div id="nav_bar"></div>
 
        <!-- BACK TO TOP BUTTON -->
-      <button onclick="backToTopFunction()" id="back_to_top_button" class="bg-secondary/60 backdrop-blur-xl rounded-xl p-2 hover:cursor-pointer hover:opacity-60 fixed bottom-10 right-10 z-99 invisible"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="text-primary" viewBox="0 0 16 16"><path fill="currentColor" d="M8 .5L.5 8H5v8h6V8h4.5z"/></svg></button>
+      <button onclick="backToTopFunction()" id="back_to_top_button" class="bg-secondary/60 backdrop-blur-xl rounded-xl p-2 hover:cursor-pointer hover:opacity-60 fixed bottom-10 right-10 z-99 invisible animate-bounce"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="text-primary" viewBox="0 0 16 16"><path fill="currentColor" d="M8 .5L.5 8H5v8h6V8h4.5z"/></svg></button>
      
       <!-- START of Landing Page -->
       <section class="flex flex-col md:flex-row justify-evenly bg-linear-to-t from-secondary to-primary">
@@ -294,38 +294,44 @@
                 class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-0 text-sm text-white bg-primary rounded shadow-lg opacity-0 group-hover:opacity-100">
             OracleBox</div>
           </div>
+
+
+        </div>
           <!-- End -->
-        
       </section>
-    
       <!-- end of about me section: technical skills -->
+
        <!-- END OF SECTION 1 -->
 
       <!-- SECTION 2 -->
       <div class="w-full py-10 px-5 md:px-8 md:py-10 lg:px-15 lg:py-15 bg-linear-to-t from-primary to-secondary">
-
-        <h2 class="text-xl md:text-2xl lg:text-5xl text-primary font-bold flex justify-end mr-3 md:mr-8 lg:mr-35 mb-10">Work Exposure</h2>
-
+        <div class="flex justify-end items-center mx-35">
+          <div class="flex flex-col items-center justify-center">
+            <h2 class="text-xl md:text-2xl lg:text-5xl text-primary font-bold">Work Exposure</h2>
+            <hr class="w-[150px] text-primary border-4">
+          </div>
+        </div>
+        
         <div class="flex flex-col md:flex-row justify-center gap-10 lg:gap-15 items-center mt-5">
           <!-- Start of Card -->
-          <div class="flex justify-center bg-white h-[450px] w-[350px] md:h-[450px] md:w-[400px] lg:h-[500px] lg:w-[450px] border border-primary border-r-4 border-b-4 shadow-2xl shadow-primary">
-              <div class="px-2 py-2 m-5">
-                <img src="assets/htt.png" alt="Holocron Tracker Trading" class="w-full h-auto object-cover border border-primary shadow-lg rounded-xl">
-                <p class="text-primary flex justify-start text-xl md:text-xl lg:text-2xl font-bold mt-10">Holocron Tracker Trading</p>
-                <p class="text-primary flex text-sm md:text-sm lg:text-base font-bold mt-2">UI/UX Design Intern  <span class="italic font-normal"> , 3/25 - 6/25</span></p>
+          <div class="flex flex-col bg-white h-[450px] w-[350px] md:h-[450px] md:w-[400px] lg:h-[500px] lg:w-[450px] border border-primary border-r-4 border-b-4 shadow-2xl shadow-secondary hover:scale-110 transition-transform duration-300">
+            <img src="assets/htt.png" alt="Holocron Tracker Trading" class="w-full h-[200px] object-cover">
+              <div class="px-2 py-2 mx-5 my-5">
+                <p class="text-primary flex justify-start text-xl md:text-xl lg:text-2xl font-bold mt-5">UI/UX Design Intern</p>
+                <p class="text-primary flex text-sm md:text-sm lg:text-base font-bold mt-2"> Holocron Tracker Trading<span class="italic font-normal"> , 3/25 - 6/25</span></p>
                 <p class="text-primary flex justify-start text-justify text-sm/4 md:text-sm/4 lg:text-sm/4 mt-3">I designed and prototyped wireframes and mock-up user interfaces (UI) for the Human Resource Information
                 System (HRIS) and created the corresponding user manual.</p>
               </div>
           </div>
           <!-- End of Card -->
 
-            <!-- Start of Card -->
-          <div class="flex justify-center bg-primary/80 h-[450px] w-[350px] md:h-[450px] md:w-[400px] lg:h-[500px] lg:w-[450px] border border-secondary border-r-4 border-b-4 shadow-2xl shadow-secondary">
-              <div class="px-2 py-2 m-5">
-                <img src="assets/locked.png" alt="Hire to Unlock" class="w-full h-auto object-cover shadow-lg">
-                <p class="text-secondary flex justify-start text-xl md:text-xl lg:text-2xl font-bold mt-10">Hire to Unlock</p>
-                <p class="text-secondary flex text-sm md:text-sm lg:text-base font-bold mt-2">Information Not Available  <span class="italic font-normal"></span></p>
-                <p class="text-secondary flex justify-start text-justify text-sm/4 md:text-sm/4 lg:text-sm/4 mt-3">Help this user to unlock a new work experience by hiring him and trusting on his potential.</p>
+           <!-- Start of Card -->
+          <div class="flex flex-col bg-secondary h-[450px] w-[350px] md:h-[450px] md:w-[400px] lg:h-[500px] lg:w-[450px] border border-secondary border-r-4 border-b-4 shadow-2xl opacity-70">
+            <img src="assets/locked.png" alt="Holocron Tracker Trading" class="w-full h-[200px] object-cover">
+              <div class="px-2 py-2 mx-5 my-5">
+                <p class="text-primary flex justify-start text-xl md:text-xl lg:text-2xl font-bold mt-5">This experience is locked</p>
+                <p class="text-primary flex text-sm md:text-sm lg:text-base font-bold mt-2">Information Not Available<span class="italic font-normal"></span></p>
+                <p class="text-primary flex justify-start text-justify text-sm/4 md:text-sm/4 lg:text-sm/4 mt-3">Help this user unlock a new work experience by hiring him and trusting on his potential.</p>
               </div>
           </div>
           <!-- End of Card -->
@@ -334,8 +340,13 @@
       <!-- END of SECTION 2 -->
  
       <!-- START OF SECTION 3 -->
-      <div class="w-full py-30 px-5 md:px-8 lg:px-15 bg-primary flex justify-center">
-        <h2 class="text-xl md:text-2xl lg:text-3xl text-secondary font-bold flex">Education</h2>
+      <div class="w-full py-30 px-5 md:px-8 lg:px-15 bg-primary flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-center items-center">
+          <h2 class="text-xl md:text-2xl lg:text-5xl text-secondary font-bold text-center">
+          Education
+          </h2>
+          <hr class="w-[100px] text-secondary border-4">
+        </div>
         <!-- START of TIMELINE -->
           <ol class="relative border-s border-secondary dark:border-secondary h-[300px] mt-15">                 
               <li class="mb-10 ms-4 mt-10">
