@@ -10,6 +10,10 @@ fetch("home.html")
       .then(res => res.text())
       .then(data => document.getElementById("about").innerHTML = data);
 
+fetch("projects.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("projects").innerHTML = data);
+
  function toggleSidebar() {
         const sidebar = document.querySelector("#sidebar");
         sidebar.classList.toggle("invisible");
