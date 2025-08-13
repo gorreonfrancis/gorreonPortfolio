@@ -2,6 +2,7 @@
       .then(res => res.text())
       .then(data => document.getElementById("nav_bar").innerHTML = data);
 
+
 fetch("home.html")
       .then(res => res.text())
       .then(data => document.getElementById("home").innerHTML = data);
@@ -17,6 +18,10 @@ fetch("projects.html")
 fetch("contact.html")
       .then(res => res.text())
       .then(data => document.getElementById("contact").innerHTML = data);
+
+fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
 
  function toggleSidebar() {
         const sidebar = document.querySelector("#sidebar");
