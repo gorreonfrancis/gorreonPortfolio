@@ -14,6 +14,10 @@ fetch("projects.html")
       .then(res => res.text())
       .then(data => document.getElementById("projects").innerHTML = data);
 
+fetch("contact.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("contact").innerHTML = data);
+
  function toggleSidebar() {
         const sidebar = document.querySelector("#sidebar");
         sidebar.classList.toggle("invisible");
