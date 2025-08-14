@@ -637,12 +637,6 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
-  .p-15 {
-    padding: calc(var(--spacing) * 15);
-  }
-  .p-\[150x\] {
-    padding: 150x;
-  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
@@ -764,9 +758,6 @@
   .italic {
     font-style: italic;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .opacity-0 {
     opacity: 0%;
   }
@@ -780,6 +771,12 @@
   .shadow-lg {
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-primary {
+    --tw-shadow-color: #050C38;
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow-color: color-mix(in oklab, var(--color-primary) var(--tw-shadow-alpha), transparent);
+    }
   }
   .shadow-secondary {
     --tw-shadow-color: #FF5A57;
@@ -906,11 +903,6 @@
       @media (hover: hover) {
         opacity: 60%;
       }
-    }
-  }
-  .active\:text-secondary {
-    &:active {
-      color: var(--color-secondary);
     }
   }
   .active\:opacity-70 {
