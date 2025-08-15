@@ -333,6 +333,9 @@
   .mt-\[50px\] {
     margin-top: 50px;
   }
+  .mt-auto {
+    margin-top: auto;
+  }
   .mr-5 {
     margin-right: calc(var(--spacing) * 5);
   }
@@ -456,6 +459,9 @@
   .w-max {
     width: max-content;
   }
+  .flex-1 {
+    flex: 1;
+  }
   .flex-shrink {
     flex-shrink: 1;
   }
@@ -494,6 +500,9 @@
   }
   .flex-wrap {
     flex-wrap: wrap;
+  }
+  .content-between {
+    align-content: space-between;
   }
   .content-center {
     align-content: center;
@@ -542,6 +551,12 @@
   }
   .gap-100 {
     gap: calc(var(--spacing) * 100);
+  }
+  .self-baseline {
+    align-self: baseline;
+  }
+  .justify-self-end {
+    justify-self: flex-end;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -1115,6 +1130,11 @@
   .md\:gap-1 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 1);
+    }
+  }
+  .md\:gap-5 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 5);
     }
   }
   .md\:px-7 {
