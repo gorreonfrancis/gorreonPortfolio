@@ -1,4 +1,4 @@
- <nav class="flex justify-end items-center bg-primary/70 backdrop-blur-2xl fixed z-[999] top-0 shadow-lg w-full">
+ <nav class="flex justify-between items-center bg-primary/70 backdrop-blur-2xl fixed z-[999] top-0 shadow-lg w-full">
   <!-- SIDEBAR for MOBILE     -->
   <ul
         class="fixed top-0 right-0 w-[250px] z-999 bg-linear-to-t from-secondary to-primary/80 backdrop-blur-sm rounded-3xl shadow-lg flex flex-col items-start justify-start invisible md:invisible"
@@ -20,25 +20,25 @@
         </li>
         <hr class="w-full border-0.5 border-white/20 px-60" />
         <li class="w-full h-16">
-          <a href="index.html" class="h-full px-5 hover:opacity-60 flex items-center active"
+          <a href="#home" class="h-full px-5 hover:opacity-60 flex items-center active"
             >Home</a
           >
         </li>
         <hr class="w-full border-0.5 border-white/20 px-60" />
         <li class="w-full h-16">
-          <a href="about.html" class="h-full px-5 hover:opacity-60 flex items-center"
+          <a href="#about" class="h-full px-5 hover:opacity-60 flex items-center"
             >About</a
           >
         </li>
         <hr class="w-full border-0.5 border-white/20 px-60" />
         <li class="w-full h-16">
-          <a href="projects.html" class="h-full px-5 hover:opacity-60 flex items-center"
+          <a href="#projects" class="h-full px-5 hover:opacity-60 flex items-center"
             >Projects</a
           >
         </li>
         <hr class="w-full border-0.5 border-white/20 px-60" />
         <li class="w-full h-16">
-          <a href="" class="h-full px-5 hover:opacity-60 flex items-center"
+          <a href="#contact" class="h-full px-5 hover:opacity-60 flex items-center"
             >Contact Me</a
           >
         </li>
@@ -46,7 +46,13 @@
       </ul>
 
       <!-- nav bar for MD - LG -->
-      <ul class="flex gap-20 invisible md:visible lg:visible navbar mr-5 md:mr-0">
+       <a
+            href="#home"
+            class="ml-5 md:ml-15"
+            ><img src="assets/logo.png" class="h-10 md:h-16 w-auto shrink-0 " alt="Logo"></a
+          >
+      
+      <ul class="hidden md:flex md:justify-self-end gap-20 navbar mr-5 md:mr-0">
         <li class="h-16">
           <a
             href="#home"
@@ -75,6 +81,17 @@
             >Contact Me</a
           >
         </li>
+        <li
+          class="h-16 visible md:invisible shrink-0 mr-5"
+          onclick="toggleSidebar()"
+        >
+          <a href="#" class="flex items-center h-full px-2">
+            <img src="assets/hamburger icon.svg" class="h-7 w-7"
+          /></a>
+        </li>
+      </ul>
+
+      <ul class="flex md:hidden gap-20 navbar mr-5 md:mr-0">
         <li
           class="h-16 visible md:invisible shrink-0 mr-5"
           onclick="toggleSidebar()"
