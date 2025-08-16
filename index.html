@@ -5,41 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Francis' Portfolio</title>
     <link href="src/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
   </head>
-  <body
-    class="min-h-screen font-primary bg-linear-to-t from-secondary to-primary text-tertiary md:overflow-hidden"
-  >
-    <main>
+  <body class="min-h-screen font-primary text-tertiary pt-[50px] bg-primary scroll-smooth ">
 
+      <!-- Preloader -->
+      <div id="preloader" 
+          class="fixed inset-0 flex items-center justify-center bg-primary z-[9999]">
+        <div class="loader"></div>
+      </div>
+
+    <main class="hidden" id="content"> 
+      <!-- Header -->
       <div id="nav_bar"></div>
-     
-      <section class="flex flex-col md:flex-row justify-evenly mt-0 md:mt-3">
-        <section class="flex justify-center items-end mt-15 order-last md:order-first ">
-          <img src="assets/francis.png" alt="Francis Gorreon" class="h-90 md:h-130  object-contain" />
-        </section>
 
-        <section class="flex flex-col justify-center items-center order-first md:order-last mt-20 md:mt-0">
-          <p class="text-xs md:text-lg mb-3 md:mb-5 tracking-widest">Hi, I am</p>
-          <div class="relative text-4xl md:text-5xl lg:text-6xl mb-0 md:mb-8 font-bold">
-            Francis C. Gorreon
-            <img src="assets/line.svg" class="absolute w-auto"></img>
-          </div>
-          <p class="text-xs mx-5 my-10 md:my-5 md:text-base tracking-widest text-center">
-            an Information Technology student, fueled with
-            <span class="hidden md:inline"><br></span>
-            <span class="font-bold">dreams and visions </span>
-            in hopes of making it big
-          </p>
-          <a href="my_resources/gorreon_cv.pdf" download>
-            <button
-              class="bg-primary border-0 text-secondary py-3 px-9 rounded-4xl hover:bg-secondary hover:text-primary hover:border-primary hover:cursor-pointer active:opacity-70 transition-colors duration-300"
-            >
-              Download CV
-            </button>
-          </a>
-        </section>
-      </section>
+      <!-- BACK TO TOP BUTTON -->
+      <button
+        onclick="backToTopFunction()"
+        id="back_to_top_button"
+        class="bg-secondary/60 backdrop-blur-xl rounded-xl p-2 hover:cursor-pointer hover:opacity-60 fixed bottom-10 right-10 z-99 invisible"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          class="text-primary"
+          viewBox="0 0 16 16"
+        >
+          <path fill="currentColor" d="M8 .5L.5 8H5v8h6V8h4.5z" />
+        </svg>
+      </button>
+
+      <!-- START of Landing Page -->
+      <div id="home"></div>
+      <!-- End of Landing Page -->
+
+      <!-- Start ABOUT ME -->
+      <div id="about"></div>
+      <!--End  About Me-->
+
+      <!-- START PROJECTS -->
+       <div id="projects"></div>
+      <!--End  Projects-->
+
+      <!-- START Contact Me -->
+       <div id="contact"></div>
+      <!--End  Contact Me-->
+
+      <!-- START Footer -->
+       <div id="footer"></div>
+      <!--End  footer-->
     </main>
-  <script src="javascripts/nav_bar.js"></script>
+
+    <script src="javascripts/layout.js"></script>
+    <script src="javascripts/nav_bar_active.js"></script>
+    <script src="javascripts/back_to_top.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+     AOS.init();
+    </script>
+
+    <script>
+window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.getElementById("preloader").style.display = "none";
+      document.getElementById("content").classList.remove("hidden");
+
+      // 👇 Re-initialize AOS so animations work
+      AOS.refresh(); 
+      // or AOS.init(); if you want to re-apply full settings
+    }, 4000); // 5 seconds
+  });
+</script>
   </body>
 </html>
