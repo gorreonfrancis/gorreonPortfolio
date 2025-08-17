@@ -18,7 +18,7 @@
 
       <!-- Preloader -->
       <div id="preloader" 
-          class="fixed inset-0 flex items-center justify-center bg-white z-[9999]">
+          class="fixed inset-0 flex items-center justify-center bg-primary z-[9999]">
         <div class="loader"></div>
       </div>
 
@@ -73,7 +73,7 @@
     </script>
 
     <script>
-window.addEventListener("load", () => {
+    window.addEventListener("load", () => {
     setTimeout(() => {
       document.getElementById("preloader").style.display = "none";
       document.getElementById("content").classList.remove("hidden");
