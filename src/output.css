@@ -406,6 +406,9 @@
   .h-full {
     height: 100%;
   }
+  .h-screen {
+    height: 100vh;
+  }
   .min-h-dvh {
     min-height: 100dvh;
   }
