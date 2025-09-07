@@ -42,7 +42,6 @@
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
     --radius-4xl: 2rem;
-    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --blur-sm: 8px;
     --blur-xl: 24px;
     --blur-2xl: 40px;
@@ -394,8 +393,8 @@
   .h-full {
     height: 100%;
   }
-  .h-screen {
-    height: 100vh;
+  .min-h-0 {
+    min-height: calc(var(--spacing) * 0);
   }
   .min-h-dvh {
     min-height: 100dvh;
@@ -1059,6 +1058,11 @@
   .md\:max-h-none {
     @media (width >= 48rem) {
       max-height: none;
+    }
+  }
+  .md\:min-h-screen {
+    @media (width >= 48rem) {
+      min-height: 100vh;
     }
   }
   .md\:w-\[400px\] {
